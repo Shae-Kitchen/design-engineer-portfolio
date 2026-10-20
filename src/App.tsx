@@ -60,11 +60,11 @@ export default function App() {
         <a className="status" href="mailto:hello@averypark.design"><i /> Available for select projects</a>
       </nav>
 
-      <section className="hero shell" id="top">
-        <div className="eyebrow"><span>DESIGN ENGINEER</span><span>BASED IN BROOKLYN, NY</span></div>
-        <h1>I design the<br />space between <em>idea</em><br />and <em>interface.</em></h1>
+      <section className="hero shell" id="top" key="shae-austin-hero">
+        <div className="eyebrow"><span>DESIGN ENGINEER</span><span>CURRENTLY IN: AUSTIN,TX</span></div>
+        <h1>I design the<br />space between <span className="fg-inline-italic">idea</span><br />and <span className="fg-inline-italic">interface.</span></h1>
         <div className="hero-bottom">
-          <p>I’m Avery — a designer who codes. I turn ambiguous problems into thoughtful, working products.</p>
+          <p>I’m Shae — a designer who codes. I turn ambiguous problems into thoughtful, working products.</p>
           <a className="circle-link" href="#work" aria-label="See selected work"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M6.5 13.5 12 19l5.5-5.5" /></svg></a>
         </div>
         <div className="hero-index" aria-hidden="true">01—03</div>
@@ -79,7 +79,7 @@ export default function App() {
               <div className="project-info">
                 <div className="project-title"><span>{project.number}</span><h2>{project.title}</h2></div>
                 <div className="project-copy"><span>{project.type}</span><p>{project.summary}</p></div>
-                <button className="project-link" aria-label={`View ${project.title} case study`}><ArrowUpRight /></button>
+                <button className="project-link" aria-label={`View ${project.title} case study`} style={{ top: "30px", bottom: "auto" }}><ArrowUpRight /></button>
               </div>
             </article>
           ))}
